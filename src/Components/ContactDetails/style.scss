@@ -1,0 +1,149 @@
+@import '../../Assets/styling/variable';
+
+.contact-details {
+  font-size: 13px;
+  padding: 0px 15px;
+
+  .contact-details--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-details--info {
+    display: flex;
+    align-items: center;
+    .profile-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: grey;
+      margin-right: 20px;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .profile--name {
+      font-family: 'Lexend-Medium';
+      font-weight: bold;
+    }
+    .profile--social {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+    .profile--designation {
+      // margin-right: 10px;
+    }
+    .profile--site {
+      color: $theme-text;
+    }
+  }
+
+  .scroll-container {
+    display: flex;
+    border-bottom: 1px solid $border-color;
+    padding: 25px 0 15px 0;
+    width: calc(100vw - 75px);
+    overflow-x: auto;
+    > div {
+      width: 345px;
+    }
+    .content-wrapper {
+      border-right: 1px solid $border-color;
+      margin-right: 15px;
+      &:last-of-type {
+        border: none;
+      }
+      .content {
+        width: 345px;
+        span:last-of-type {
+          font-family: 'Lexend-Medium';
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.timeline-container {
+  flex: 7;
+  border: 1px solid $border-color;
+  // margin: 7px 7px;
+  border-radius: 5px;
+  .group-btn-wrapper {
+    width: 400px;
+    font-size: 0.9rem;
+  }
+}
+
+.collection-container {
+  flex: 3;
+  // margin: 7px 7px 7px 0;
+  .notes-container {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    .notes-title {
+      display: block;
+      font-family: 'Lexend-Medium';
+    }
+    .add-notes {
+      width: 100%;
+      border: none;
+      background: $theme-light-color;
+      padding: 10px;
+      border-radius: 8px;
+      color: $default-text;
+      outline: none;
+      &::placeholder {
+        color: #818181;
+      }
+    }
+    .notes-details-container {
+      border-bottom: 1px solid $border-color;
+      margin-bottom: 1rem;
+      // font-size: 0.9rem;
+      &:last-of-type {
+        border: none;
+        margin: 0;
+      }
+      .notes-details {
+        display: flex;
+        align-items: center;
+        .profile-pic {
+          width: 30px;
+          height: 30px;
+          background-color: grey;
+          border-radius: 50%;
+          overflow: hidden;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .time {
+          color: #979797;
+        }
+        .file-name {
+          font-family: 'Lexend-Medium';
+        }
+      }
+    }
+    .contact-pic {
+      width: 40px;
+      height: 40px;
+      background-color: grey;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .note-description {
+      margin-left: 35px;
+    }
+  }
+}

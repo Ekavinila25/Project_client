@@ -1,0 +1,65 @@
+@import '../../Assets/styling/_variable.scss';
+
+.deals-container {
+  .deals--header {
+    min-height: 65px;
+    .divider {
+      border-right: 1px solid $border-color;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+  }
+  .deals-section {
+    background-color: $background-grey;
+    min-height: calc(100vh - 65px);
+    overflow-x: auto;
+    // width: calc();
+    display: flex;
+    flex-direction: row;
+    .title {
+      font-weight: bold;
+      font-size: 13px;
+    }
+    .deals-column{
+      border-right: 1px solid #e0e0e0;
+      width: 300px;
+      flex: 1;
+      .deals-column--header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: 13px !important;
+        width: 300px;
+      }
+    }
+    .deal-card {
+      background: white;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px 12px;
+      .deal-card--content {
+        .title {
+          font-weight: bold;
+          font-size: 13px;
+        }
+        .price {
+          font-size: 13px;
+          margin: 5px 0px;
+        }
+      }    
+      .contact-pic {
+        width: 30px;
+        height: 30px;
+        background-color: grey;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../Assets/styling/variable';
+
+.breadcrumb {
+  background-color: $default-light-color;
+  .breadcrumb-item {
+    color: $theme-text;
+    &.active {
+      color: $default-text;
+    }
+  }
+}

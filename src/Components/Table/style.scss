@@ -1,0 +1,11 @@
+@import "../../assets/styling/variable";
+
+.table {
+  thead {
+    border-top: 2px solid white;
+    color: #7c7c7c;
+  }
+  .anchor-tag {
+    color: $theme-text;
+  }
+}

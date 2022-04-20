@@ -1,0 +1,25 @@
+@import '../../assets/styling/variable';
+
+.group-button-container {
+  background: $theme-light-color;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #707070;
+  font-size: 13px;
+
+  span {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+      background: $theme-color;
+      border: 1px $theme-color;
+      font-weight: 600;
+      border-radius: 5px;
+      min-height: 35px;
+      color: $default-light-text;
+    }
+  }
+}

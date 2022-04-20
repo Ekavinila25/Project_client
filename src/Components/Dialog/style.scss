@@ -1,0 +1,59 @@
+@import '../../Assets/styling/variable';
+
+
+.dialog-container {
+  position: absolute;
+  top: auto;
+  // right: -100%;
+  display: none;
+  left: 0;
+  bottom: 0;
+  transition: 1s;
+  height: 100vh;
+  z-index: -1;
+  &.active {
+    display: block;
+    right: 0;
+    z-index: 99;
+    background-color: #00000050;
+  }
+
+  .dialog-excrete {
+    width: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .dialog {
+    height: 100vh;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    border-radius: 10px 0px 0px 10px;
+    transition: 0.75s;
+    background: $default-light-color;
+    &.hide {
+      right: -30%;
+    }
+  
+    .dialog-header{
+      font-family: 'Lexend-Medium';
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid $border-color;
+      height: 50px;
+  
+      .dialog-header--title {
+  
+      }
+      .dialog-header--close {
+  
+      }
+    }
+  }
+}
